@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #eab543;
+  color: #2d3436;
+  font-family: "Open Sans", sans-serif;
+  text-transform: uppercase;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.container h1 {
+  text-align: center;
+}
+
+.stikers {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-content: center;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.box {
+  width: 250px;
+  height: 250px;
+  background-color: #b2bec3;
+  margin: 0 auto;
+  border-radius: 1.4rem;
+  box-shadow: 2px 2px 5px #000000;
+  padding: 1.25rem;
+  position: relative;
+  margin: 1rem;
+}
+
+.box p {
+  font-weight: 700;
+  font-size: 1.35rem;
+  letter-spacing: -1px;
+}
+
+.box p.link {
+  position: absolute;
+  font-size: 1rem;
+  bottom: 10px;
+}
+
+.box p.link span {
+  color: #636e72;
+}
+
+.socials {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 0px;
+}
+.socials-header {
+  margin-bottom: 20px;
+}
+.socials-icons {
+  display: flex;
+  align-items: center;
+}
+.icon {
+  text-decoration: none;
+  font-size: 32px;
+  color: #2d3436;
+  display: block;
+  transition: transform 0.3s ease;
+}
+.icon:hover {
+  transform: scale(1.3);
+}
+.icon:first-child {
+  margin-right: 30px;
+}
+
+@media only screen and (max-width: 1000px) {
+  .stikers {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .stikers {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .stikers {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
